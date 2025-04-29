@@ -47,7 +47,7 @@ include('sign-connection.php')
 
 
         <li>
-          <a href="contact.php">Contact Us</a>
+          <a href="/IA-project/Kemet/con.php">Contact Us</a>
         </li>
 
         <!-- <li>
@@ -94,7 +94,7 @@ include('sign-connection.php')
         <tr>
           <td><?php echo $data['id']; ?></td>
           <td><?php echo $data['productname']; ?></td>
-          <td><?php echo $data['color']; ?></td>
+          <td><?php echo $data['Category']; ?></td>
           <td><?php echo $data['price']; ?></td>
           <td><img src="data:image/jpeg;base64,<?php echo base64_encode($data['image']); ?>" alt="" height="50px" width="50px"></td>
           <td><a href="edit.php?id=<?php echo $data['id']; ?>">Edit</a></td>
