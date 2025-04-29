@@ -1,3 +1,9 @@
+<?php include('contact_info.php');?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,31 +38,25 @@
 
         <div class="list">
             <ul>
-                <a href="home page.html">
+                <a href="home.php">
                     <li>
                         Home
                     </li>
                 </a>
-                <a href="home page.html #categories">
-                    <li>
-                        Categories
-                    </li>
-                </a>
-                <a href="about_us.html">
-                    <li>
-                        About
-                    </li>
-                </a>
-                <a href="contact.html">
+
+
+
+                <!-- <a href="contact.html">
                     <li>
                         Contact Us
                     </li>
-                </a>
-                <a href="login.php">
-                    <li>
-                        Login
-                    </li>
-                </a>
+                </a> -->
+
+
+
+
+                <li>                     <a href="?logout=1">Logout</a>
+                </li>
                 <a href="#">
                     <li>
                         <i class="fa-solid fa-heart"></i>
@@ -71,6 +71,11 @@
             </ul>
         </div>
     </nav>
+
+
+
+
+
     <div class="contact-container">
         <div class="image-section">
             <img src="./img/WhatsApp Image 2024-12-13 at 12.28.27 PM.jpeg" alt="Two models">
@@ -95,6 +100,14 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
     <!-- footer -->
     <footer class="site-footer">
 
