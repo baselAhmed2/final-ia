@@ -83,7 +83,7 @@ include('sign-connection.php')
   <tr>
     <th>ID</th>
     <th>productname</th>
-    <th>color</th>
+    <th>Category</th>
     <th>price</th>
     <th>image</th>
   </tr>
@@ -97,7 +97,7 @@ include('sign-connection.php')
   <tr>
   <td><?php echo $data['id'];?></td> 
    <td><?php echo $data['productname'];?></td>
-  <td><?php echo $data['color'];?></td>
+  <td><?php echo $data['Category'];?></td>
   <td><?php echo $data['price'];?></td>
   <td><img src="data:image/jpeg;base64,<?php echo base64_encode($data['image']);?>" alt="" height="50px" width="50px"></td><td><a href="edit.php?id=<?php echo $data['id']; ?>">Edit</a></td>
 <td><a href=" delete.php?id=<?php echo $data['id']; ?>">Delete</a></td>
