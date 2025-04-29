@@ -9,10 +9,10 @@ $data = mysqli_fetch_array($qry1);
 // If update button is clicked
 if (isset($_POST['update'])) {
     $productname = $_POST['productname'];
-    $color = $_POST['color'];
+    $Category = $_POST['Category'];
     $price = $_POST['price'];
 
-    $sql1 = "UPDATE product SET productname='$productname', color='$color', price='$price' WHERE id='$id'";
+    $sql1 = "UPDATE product SET productname='$productname', Category='$Category', price='$price' WHERE id='$id'";
     $edit = mysqli_query($db, $sql1);
 
     if ($edit) {
@@ -29,7 +29,7 @@ if (isset($_POST['update'])) {
 <form method="POST">
   <input type="text" name="productname" value="<?php echo $data['productname']; ?>" placeholder="Enter Product Name" required>
   
-  <input type="text" name="color" value="<?php echo $data['color']; ?>" placeholder="Enter Color" required>
+  <input type="text" name="Category" value="<?php echo $data['Category']; ?>" placeholder="Enter Category" required>
   
   <input type="text" name="price" value="<?php echo $data['price']; ?>" placeholder="Enter Price" required>
   
