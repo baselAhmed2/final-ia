@@ -44,38 +44,7 @@ if(isset($_POST['signup'])){
 }
 }
 
-///login
-if(isset($_POST['login'])){
 
-    $email= mysqli_real_escape_string($db, $_POST['em']);
-    $password= mysqli_real_escape_string($db, $_POST['pas']);
-}
-
-if(empty($email)){
-    array_push($error, 'PLEASE ENTER YOUR EMAIL');
-}
-
-if(empty($password)){
-    array_push($error, 'PLEASE ENTER THE PASSWORD');
-}
-
-if(count($error)== 0){
-
-  $query = "SELECT * FROM signup WHERE email= '$email' AND password= '$password'";
-$result = mysqli_query($db, $query);
-
-if ($result) {
-    if (mysqli_num_rows($result) == 1) {
-        $_SESSION['name'] = $email;
-        $_SESSION['success'] = "Welcome !";
-        
-        header("location:home.php");
-    } else {
-        array_push($error, "Wrong email or password");
-    }
-} 
-
-}
 // }
 
 //logout

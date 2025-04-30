@@ -47,7 +47,7 @@ include('sign-connection.php')
 
 
         <li>
-          <a href="/IA-project/Kemet/con.php">Contact Us</a>
+          <a href="/IA-project/Kemet/Contact.php">Contact Us</a>
         </li>
 
         <!-- <li>
@@ -77,7 +77,7 @@ include('sign-connection.php')
 
   <h1>our products</h1>
   <div class="section">
-    <table border="2px">
+    <table  style = 'border="2px"'>
       <tr>
         <th>ID</th>
         <th>productname</th>
@@ -113,7 +113,7 @@ include('sign-connection.php')
       <div class="row">
         <div class="footer">
           <p class="copyright-text">
-            Copyright &copy; 2024 All Rights Reserved by Kemet
+            Copyright &copy; 2025 All Rights Reserved by Kemet
           </p>
         </div>
 
