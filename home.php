@@ -81,7 +81,7 @@ include('sign-connection.php')
       <tr>
         <th>ID</th>
         <th>productname</th>
-        <th>color</th>
+        <th>Category</th>
         <th>price</th>
         <th>image</th>
       </tr>
